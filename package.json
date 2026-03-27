@@ -16,5 +16,8 @@
     "retro"
   ],
   "author": "Claudio",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "puppeteer": "^24.40.0"
+  }
 }
