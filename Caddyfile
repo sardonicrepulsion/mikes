@@ -1,0 +1,40 @@
+:80 {
+    root * /srv
+
+    # Security headers
+    header {
+        X-Frame-Options "SAMEORIGIN"
+        X-Content-Type-Options "nosniff"
+        Referrer-Policy "strict-origin-when-cross-origin"
+        Permissions-Policy "camera=(), microphone=(), geolocation=()"
+        Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline' https://errors.sardonicrepulsion.com https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data:; connect-src 'self' https://errors.sardonicrepulsion.com https://contact.sardonicrepulsion.com https://dl.sardonicrepulsion.com; frame-ancestors 'none'"
+    }
+
+    # MUST be before catch-all file_server handle
+    handle /health {
+        header Content-Type application/json
+        respond "{\"status\":\"ok\",\"version\":\"1.0.5\"}" 200
+    }
+
+    # MUST be before catch-all file_server handle
+    handle /version {
+        header Content-Type application/json
+        rewrite * /version.json
+        file_server
+    }
+
+    @static path_regexp static \.((jpg|jpeg|png|gif|svg|ico|css|js|woff2?|ttf))$
+    header @static Cache-Control "public, immutable"
+
+    handle {
+        header Cache-Control "no-cache, must-revalidate"
+        try_files {path} {path}/ =404
+        file_server
+    }
+
+    handle_errors {
+        @notfound expression {err.status_code} == 404
+        rewrite @notfound /404.html
+        file_server
+    }
+}
