@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kocúr Mikeš</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Language Switcher -->
+    <div class="lang-switcher">
+        <button class="lang-btn active" data-lang="sk">SK</button>
+        <button class="lang-btn" data-lang="cs">CZ</button>
+        <button class="lang-btn" data-lang="en">EN</button>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <div class="cat-illustration">
+                <svg viewBox="0 0 200 250" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Cat head -->
+                    <circle cx="100" cy="100" r="60" fill="#000" class="cat-head"/>
+                    <!-- Ears -->
+                    <polygon points="70,50 50,10 80,40" fill="#000" class="cat-ear-left"/>
+                    <polygon points="130,50 150,10 120,40" fill="#000" class="cat-ear-right"/>
+                    <!-- Eyes -->
+                    <circle cx="85" cy="90" r="8" fill="#7cb342" class="eye-left"/>
+                    <circle cx="115" cy="90" r="8" fill="#7cb342" class="eye-right"/>
+                    <circle cx="87" cy="88" r="3" fill="#fff"/>
+                    <circle cx="117" cy="88" r="3" fill="#fff"/>
+                    <!-- Nose -->
+                    <path d="M 100 110 L 95 120 L 105 120 Z" fill="#7cb342" class="nose"/>
+                    <!-- Mouth -->
+                    <path d="M 100 120 Q 90 130 80 125" stroke="#7cb342" stroke-width="2" fill="none" stroke-linecap="round"/>
+                    <path d="M 100 120 Q 110 130 120 125" stroke="#7cb342" stroke-width="2" fill="none" stroke-linecap="round"/>
+                    <!-- Whiskers -->
+                    <line x1="40" y1="100" x2="50" y2="100" stroke="#7cb342" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="150" y1="100" x2="160" y2="100" stroke="#7cb342" stroke-width="2" stroke-linecap="round"/>
+                    <!-- Body -->
+                    <ellipse cx="100" cy="180" rx="45" ry="50" fill="#000"/>
+                    <!-- Red scarf -->
+                    <path d="M 60 150 Q 80 140 100 145 Q 120 140 140 150" stroke="#e53935" stroke-width="8" fill="none" stroke-linecap="round"/>
+                    <path d="M 55 155 L 50 180 L 60 175" fill="#e53935"/>
+                    <path d="M 145 155 L 150 180 L 140 175" fill="#e53935"/>
+                    <!-- Tail -->
+                    <path d="M 75 220 Q 50 240 60 270" stroke="#000" stroke-width="8" fill="none" stroke-linecap="round"/>
+                </svg>
+            </div>
+            <h1 class="hero-title" data-sk="Kocúr Mikeš" data-cs="Kocour Mikeš" data-en="Tom Mikeš">Kocúr Mikeš</h1>
+            <p class="hero-tagline" data-sk="Najslávnejší kocúr slovenskej rozprávky" data-cs="Nejslavnější kocour české pohádky" data-en="The most famous cat in Slovak fairy tales">Najslávnejší kocúr slovenskej rozprávky</p>
+        </div>
+        <div class="scroll-hint">↓</div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about-section" data-aos="fade-up">
+        <div class="section-content">
+            <h2 class="section-title" data-sk="O rozprávke" data-cs="O pohádce" data-en="About the Story">O rozprávke</h2>
+            <p class="section-text" data-sk="Kocúr Mikeš je klasická slovenská rozprávka, ktorá sa čitateľov tešila už po generácie. Táto krásna história hovorí o chytrosti, odvaze a priateľstve. Kocúr Mikeš je hrdinom, ktorý svojou inteligenciou a snaživosťou prekonáva všetky prekážky a sprevádzajú ho na ceste za snom." data-cs="Kocour Mikeš je klasická česká pohádka, která potěšila čtenáře po generace. Tato krásná historie mluví o chytrosti, odvahy a přátelství. Kocour Mikeš je hrdinou, který svojí inteligencí a snaživostí překonává všechny překážky a provází jej na cestě za snem." data-en="Tom Mikeš is a classic Slovak fairy tale that has delighted readers for generations. This beautiful story speaks of cleverness, bravery, and friendship. Tom is a hero who, through his intelligence and determination, overcomes all obstacles and is accompanied on his journey to fulfill his dream.">Kocúr Mikeš je klasická slovenská rozprávka, ktorá sa čitateľov tešila už po generácie. Táto krásna história hovorí o chytrosti, odvaze a priateľstve. Kocúr Mikeš je hrdinom, ktorý svojou inteligenciou a snaživosťou prekonáva všetky prekážky a sprevádzajú ho na ceste za snom.</p>
+        </div>
+        <div class="accent-shape shape-1"></div>
+    </section>
+
+    <!-- Story Section -->
+    <section class="section story-section" data-aos="fade-up">
+        <div class="section-content">
+            <h2 class="section-title" data-sk="Příběh" data-cs="Příběh" data-en="The Story">Príbeh</h2>
+            <p class="section-text" data-sk="Kocúr Mikeš bol mladý a ambiciózny kocúr, ktorý sa rozhodol opustiť svoj domov a hľadať svoje miesto vo svete. Počas svojej cesty stretáva rôznych postáv, ktoré ho učia hodnotám života. Každá príhoda ho približuje k svojmu cieľu a odkrýva mu skrytú silu, ktorú v sebe nosí." data-cs="Kocour Mikeš byl mladý a ambiciózní kocour, který se rozhodl opustit svůj domov a hledat své místo na světě. Během své cesty se setkává s různými postavami, které jej učí hodnotám života. Každá příhoda jej přibližuje k cíli a odhaluje mu skrytou sílu, kterou v sobě nese." data-en="Young Tom was an ambitious cat who decided to leave his home and find his place in the world. During his journey, he meets various characters who teach him about life's values. Each adventure brings him closer to his goal and reveals the hidden strength he carries within.">Kocúr Mikeš bol mladý a ambiciózny kocúr, ktorý sa rozhodol opustiť svoj domov a hľadať svoje miesto vo svete. Počas svojej cesty stretáva rôznych postáv, ktoré ho učia hodnotám života. Každá príhoda ho približuje k svojmu cieľu a odkrýva mu skrytú silu, ktorú v sebe nosí.</p>
+        </div>
+        <div class="accent-shape shape-2"></div>
+    </section>
+
+    <!-- Legacy Section -->
+    <section class="section legacy-section" data-aos="fade-up">
+        <div class="section-content">
+            <h2 class="section-title" data-sk="Dedičstvo" data-cs="Dědictví" data-en="Legacy">Dedičstvo</h2>
+            <p class="section-text" data-sk="Príbeh Kocúra Mikeša bol inšpiráciou pre mnoho interpretácií v umení, ilustrácií a adaptácií. Josef Lada, slávny československý umelec, vytvoril nádherné ilustrácie, ktoré dodali príbehu nový rozmer a čarovný štýl. Jeho retro estetika z čias golden age rozprávok robí z tejto klasiky bezčasovú a milovanú všetkými generáciami." data-cs="Příběh Kocour Mikeša byl inspirací pro mnoho interpretací v umění, ilustrací a adaptací. Josef Lada, slavný československý umělec, vytvořil nádherné ilustrace, které příběhu dodaly nový rozměr a kouzelný styl. Jeho retro estetika z dob golden age pohádek činí tuto klasiku bezčasovým a milovaným všemi generacemi." data-en="The story of Tom Mikeš has inspired many artistic interpretations, illustrations, and adaptations. Josef Lada, the renowned Czechoslovak artist, created beautiful illustrations that added a new dimension and magical style to the story. His retro aesthetic from the golden age of fairy tales makes this classic timeless and beloved by all generations.">Príbeh Kocúra Mikeša bol inšpiráciou pre mnoho interpretácií v umení, ilustrácií a adaptácií. Josef Lada, slávny československý umelec, vytvoril nádherné ilustrácie, ktoré dodali príbehu nový rozmer a čarovný štýl. Jeho retro estetika z čias golden age rozprávok robí z tejto klasiky bezčasovú a milovanú všetkými generáciami.</p>
+        </div>
+        <div class="accent-shape shape-3"></div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p data-sk="© 2026 Kocúr Mikeš. Klasika slovenských rozprávok." data-cs="© 2026 Kocour Mikeš. Klasika českých pohádek." data-en="© 2026 Tom Mikeš. A classic of Slovak fairy tales.">© 2026 Kocúr Mikeš. Klasika slovenských rozprávok.</p>
+        <p class="footer-artist" data-sk="Ilustrácie inšpirované Jozefom Ladou" data-cs="Ilustrace inspirované Josefem Ladou" data-en="Illustrations inspired by Josef Lada">Ilustrácie inšpirované Jozefom Ladou</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
